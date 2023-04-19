@@ -12,7 +12,7 @@ class CreateTicketsTable extends Migration
         $table->id();
         $table->string('agency');
         $table->string('service_type');
-        $table->boolean('isValid')->default(false);
+        $table->boolean('isValid')->default(true);
         $table->timestamps();
     });
 }
